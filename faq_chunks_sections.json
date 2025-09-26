@@ -1,0 +1,47 @@
+[
+  {
+    "chunk": "## Issues and Solutions\n\n### Running the GDP Block Takes Forever\n\n**Exception:**\n\n```\nPipeline run xx for global data product training_set: failed\nAttributeError: 'NoneType' object has no attribute 'to_dict'\n```\n\n### Potential Causes and Solutions:\n\n- **Ensure Project and Pipeline Matching**:\n  \n  Make sure the following configurations are correct:\n  \n  ```python\n  \"project\": \"unit_2_training\",\n  \"repo_path\": \"/home/src/mlops/unit_2_training\",\n  ```\n\n- **Restart Steps**:\n  \n  1. Interrupt and restart the Kernel from the Run menu.\n  2. Bring Docker down and restart it via the script.\n\n- **Recreate Everything (if above steps fail):**\n  \n  1. Remove connections from the `hyperparameter_tuning/sklearn` block in the Tree panel to its upstream blocks.\n     - Click on the connector → Remove Connection.\n  2. Remove the Global Data Product block from the Tree panel.\n     - Right click → Delete Block (ignore dependencies).\n  3. Click on All blocks, select Global Data Products, drag and drop this block to be the first in the pipeline.\n  4. Rename the block to what is used in the video.\n  5. Run the block to test it (Play button or Ctrl+Enter).\n\n### Note\n\nIf helpful, repeat similar steps for the file in path \"unit_3_observability.\" There is an ongoing attempt to replicate this process.\n\n### Error with Creating Global Data Product on Mage\n\n**Error:**\n\n```\nAttributeError: 'NoneType' object has no attribute 'to_dict'\n```\n\n**Solution:**\n\nGlobal product is currently not cross-product. You will need to create the data preparation pipeline in `unit_2_training` and configure it to build.",
+    "id": "cc4481d2fa",
+    "question": "Video 3.2.1 - Various issues with Global Data Products",
+    "sort_order": 12,
+    "filename": "faq-main/_questions/mlops-zoomcamp/module-3/012_cc4481d2fa_video-321-various-issues-with-global-data-products.md"
+  },
+  {
+    "chunk": "## Available Courses\n\n- [Data Engineering Zoomcamp](data-engineering-zoomcamp.md)\n- [Machine Learning Zoomcamp](machine-learning-zoomcamp.md)\n- [MLOps Zoomcamp](mlops-zoomcamp.md)",
+    "title": "DataTalks.Club FAQ",
+    "filename": "faq-main/index.md"
+  },
+  {
+    "chunk": "## About\n\nThis site contains frequently asked questions and answers from the DataTalks.Club community courses.",
+    "title": "DataTalks.Club FAQ",
+    "filename": "faq-main/index.md"
+  },
+  {
+    "chunk": "## Test Structure\n\n### Unit Tests (`tests/unit/`)\nTests for individual functions and components:\n\n- **`test_frontmatter.py`** - YAML frontmatter parsing\n  - Valid/invalid YAML handling\n  - Edge cases (empty, malformed, special characters)\n  - Multiline values and nested structures\n\n- **`test_url_conversion.py`** - URL detection and conversion\n  - HTTP/HTTPS URL detection\n  - Code block and inline code preservation  \n  - Trailing punctuation handling\n  - Complex mixed scenarios\n\n- **`test_markdown.py`** - Markdown processing\n  - Basic markdown to HTML conversion\n  - Image placeholder replacement\n  - Table and task list processing\n  - Syntax highlighting integration\n\n- **`test_renderer.py`** - HighlightRenderer class\n  - Language alias handling\n  - Syntax highlighting functionality\n  - Code span and link rendering\n  - Error handling for invalid languages\n\n- **`test_course_processing.py`** - Course and metadata processing\n  - Course metadata loading\n  - Section and question file processing\n  - Error recovery and validation\n\n- **`test_jinja_setup.py`** - Jinja2 template environment\n  - Template loading and rendering\n  - Custom filter functionality\n  - Auto-escaping behavior\n\n- **`test_sorting.py`** - Sorting and organization\n  - Question sorting by sort_order\n  - Section ordering by metadata\n  - Handling missing sections\n\n### Integration Tests (`tests/integration/`)\nEnd-to-end workflow tests:\n\n- **`test_site_generation.py`** - Complete site generation\n  - Full pipeline from questions to HTML\n  - Multiple course handling\n  - Asset copying and file structure\n\n- **`test_real_world.py`** - Real-world scenarios\n  - Large courses with many sections\n  - Unicode and special character handling\n  - Complex markdown features\n  - Error recovery and partial processing",
+    "filename": "faq-main/tests/readme.md"
+  },
+  {
+    "chunk": "## Running Tests\n\n### Run All Tests\n```bash\n# Run all tests\nuv run --extra dev pytest\n\n# Or use the test runner\npython run_tests.py\n```\n\n### Run Specific Test Categories\n```bash\n# Unit tests only\nuv run --extra dev pytest tests/unit/ -v\n\n# Integration tests only  \nuv run --extra dev pytest tests/integration/ -v\n```\n\n### Run Specific Test Files\n```bash\n# Test URL conversion functionality\nuv run --extra dev pytest tests/unit/test_url_conversion.py -v\n\n# Test site generation\nuv run --extra dev pytest tests/integration/test_site_generation.py -v\n```\n\n### Run Specific Test Methods\n```bash\n# Test specific functionality\nuv run --extra dev pytest tests/unit/test_url_conversion.py::TestConvertPlainUrlsToLinks::test_preserve_urls_in_code_blocks -v\n```",
+    "filename": "faq-main/tests/readme.md"
+  },
+  {
+    "chunk": "## Test Coverage\n\nThe test suite provides comprehensive coverage of:\n\n### Core Functionality\n- ✅ YAML frontmatter parsing (10 tests)\n- ✅ URL detection and conversion (15 tests)\n- ✅ Markdown processing (14 tests)\n- ✅ Syntax highlighting (15 tests)\n- ✅ Course metadata handling (8 tests)\n- ✅ Template rendering (7 tests)\n- ✅ Sorting and organization (8 tests)\n\n### Integration Scenarios\n- ✅ Complete site generation (4 tests)\n- ✅ Large-scale processing (3 tests)\n- ✅ Unicode and special characters (1 test)\n- ✅ Complex markdown features (1 test)\n- ✅ Error recovery (1 test)\n\n### Edge Cases\n- Empty files and directories\n- Invalid YAML frontmatter\n- Missing required fields\n- Binary files in question directories\n- Unicode characters and emojis\n- Complex nested markdown structures\n- Multiple courses and sections\n- Large datasets (50+ questions)",
+    "filename": "faq-main/tests/readme.md"
+  },
+  {
+    "chunk": "## Key Test Features\n\n### URL Detection Testing\nThe URL conversion tests ensure that:\n- Plain text URLs are converted to clickable links\n- URLs in code blocks remain untouched\n- URLs in inline code are preserved\n- Existing markdown links are not double-converted\n- Trailing punctuation is handled correctly\n\n### Error Handling\nTests verify graceful handling of:\n- Invalid YAML frontmatter\n- Missing required fields\n- Non-existent files and directories\n- Binary files in question directories\n- Malformed markdown content\n\n### Real-World Scenarios\nIntegration tests simulate:\n- Large courses with 10+ sections and 50+ questions\n- International content with unicode characters\n- Complex markdown with tables, task lists, and code blocks\n- Mixed valid/invalid content in the same course",
+    "filename": "faq-main/tests/readme.md"
+  },
+  {
+    "chunk": "## Adding New Tests\n\nWhen adding new functionality to `generate_website.py`:\n\n1. **Add unit tests** for new functions in appropriate `test_*.py` files\n2. **Add integration tests** if the change affects the complete workflow\n3. **Test edge cases** and error conditions\n4. **Update this README** if new test categories are added\n\n### Test Naming Convention\n- Test files: `test_<functionality>.py`\n- Test classes: `Test<ClassName>`\n- Test methods: `test_<specific_behavior>`\n\n### Example Test Structure\n```python\nclass TestNewFeature:\n    \"\"\"Test the new feature functionality\"\"\"\n    \n    def test_basic_functionality(self):\n        \"\"\"Test basic feature behavior\"\"\"\n        pass\n        \n    def test_edge_cases(self):\n        \"\"\"Test edge cases and error conditions\"\"\"\n        pass\n        \n    def test_integration_with_existing_features(self):\n        \"\"\"Test how feature integrates with existing code\"\"\"\n        pass\n```",
+    "filename": "faq-main/tests/readme.md"
+  },
+  {
+    "chunk": "## Dependencies\n\nThe test suite requires:\n- `pytest>=7.0.0` (defined in pyproject.toml dev dependencies)\n- All main project dependencies for testing the actual functionality",
+    "filename": "faq-main/tests/readme.md"
+  },
+  {
+    "chunk": "## Configuration\n\nTest configuration is defined in `pyproject.toml`:\n- Test discovery paths\n- Test file patterns\n- Output formatting\n- Custom markers for test categorization",
+    "filename": "faq-main/tests/readme.md"
+  }
+]
