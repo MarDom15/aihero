@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-09-28T20:43:59.452402+00:00",
+  "question": "how do I install Kafka in Python?",
+  "answer": "Use the FAQ context to answer the question.\n\nContext:\nTo install Kafka in Python, use pip install kafka-python. (source: faq1.md)\nDocker on Windows can be installed via Docker Desktop. (source: faq3.md)\n\nQuestion: how do I install Kafka in Python?\nAnswer: To install Kafka in Python, use pip to install krpc-python by following the instructions in the code example available under \"faq1.md\" or the Docker page for Docker Desktop. You can use the `.tar.md5` file to install the Python client and the `.sh` file to install the Kafka core cluster.",
+  "source": "user",
+  "context": "To install Kafka in Python, use pip install kafka-python. (source: faq1.md)\nDocker on Windows can be installed via Docker Desktop. (source: faq3.md)"
+}

@@ -1,0 +1,7 @@
+{
+  "timestamp": "2025-09-28T20:03:37.850387",
+  "question": "how do I install Kafka in Python?",
+  "answer": "Use the FAQ context to answer the question.\n\nContext:\nNo relevant FAQ found.\n\nQuestion: how do I install Kafka in Python?\nAnswer:\nimport pandas as pd\ndf = pd.read_csv(\"File1.csv\")\n\ndf['status'] = 'Not yet open'\ndf['processors'] = pd.DataFrame({'name': 'processor','size': 'processors','status': 'open'})\n\ndf['processors'].fillna('2')\n\ndf = pd.concat(df, axis = 3)[\"status\"]\ndf['processors']\n\ndf.to_json()\n\ndf.",
+  "source": "user",
+  "context": "No relevant FAQ found."
+}

@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-09-28T18:36:53.998286",
+  "source": "user",
+  "question": "what i need to take this cours ?",
+  "answer": "I searched the FAQ and found these relevant excerpts:\n- ### What does this line do?... [source: faq-main/_questions/machine-learning-zoomcamp/module-4/008_24d2042733_what-does-kfold-do.md]\n- **What’s Backpressure?**... [source: faq-main/_questions/data-engineering-zoomcamp/workshop-1-dlthub/013_7be69bdcb4_loading-dlt-exports-from-gcs-filesystems.md]\n- Here’s what you can do:... [source: faq-main/_questions/data-engineering-zoomcamp/module-3/029_24c64415c0_why-does-my-partitioned-table-in-bigquery-show-as.md]\n- - To find out what path to use, execute this from the running container:... [source: faq-main/_questions/mlops-zoomcamp/module-3/023_376ba649d7_attributeerror-module-mlflow-has-no-attribute-set_.md]\n- Here’s what happens:... [source: faq-main/_questions/llm-zoomcamp/module-1/020_bf0403d21b_openai-why-does-my-token-count-differ-from-what-op.md]\n\nIf you'd like, tell me which excerpt you want expanded or ask for more details. If none of these look relevant, try rephrasing the question.",
+  "search_results": [
+    {
+      "filename": "faq-main/_questions/machine-learning-zoomcamp/module-4/008_24d2042733_what-does-kfold-do.md",
+      "chunk_preview": "### What does this line do?"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/workshop-1-dlthub/013_7be69bdcb4_loading-dlt-exports-from-gcs-filesystems.md",
+      "chunk_preview": "**What’s Backpressure?**"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-3/029_24c64415c0_why-does-my-partitioned-table-in-bigquery-show-as.md",
+      "chunk_preview": "Here’s what you can do:"
+    },
+    {
+      "filename": "faq-main/_questions/mlops-zoomcamp/module-3/023_376ba649d7_attributeerror-module-mlflow-has-no-attribute-set_.md",
+      "chunk_preview": "- To find out what path to use, execute this from the running container:"
+    },
+    {
+      "filename": "faq-main/_questions/llm-zoomcamp/module-1/020_bf0403d21b_openai-why-does-my-token-count-differ-from-what-op.md",
+      "chunk_preview": "Here’s what happens:"
+    }
+  ]
+}

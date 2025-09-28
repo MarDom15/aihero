@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-09-28T18:32:43.166695",
+  "source": "user",
+  "question": "can take this course ?",
+  "answer": "I searched the FAQ and found these relevant excerpts:\n- Yes, you can. Even though you missed the start date, you can register for the course... [source: faq-main/_questions/machine-learning-zoomcamp/general/014_41aabbd7c5_the-course-has-already-started-can-i-still-join-it.md]\n- It's not mandatory. You can take advantage of their free trial.... [source: faq-main/_questions/data-engineering-zoomcamp/general/028_e7738f47c8_should-i-pay-for-cloud-services.md]\n- The course videos are pre-recorded, and you can start watching the course right now.... [source: faq-main/_questions/mlops-zoomcamp/general/002_7f10dde6f8_is-it-going-to-be-live-when.md]\n- For 2025 the link to the course profile is this:... [source: faq-main/_questions/data-engineering-zoomcamp/general/046_6314bc3029_how-do-i-get-my-certificate.md]\n- To get the most out of this course, you should have:... [source: faq-main/_questions/data-engineering-zoomcamp/general/002_bfafa427b3_course-what-are-the-prerequisites-for-this-course.md]\n\nIf you'd like, tell me which excerpt you want expanded or ask for more details. If none of these look relevant, try rephrasing the question.",
+  "search_results": [
+    {
+      "filename": "faq-main/_questions/machine-learning-zoomcamp/general/014_41aabbd7c5_the-course-has-already-started-can-i-still-join-it.md",
+      "chunk_preview": "Yes, you can. Even though you missed the start date, you can register for the course. You won’t be able to submit some of the homeworks, but you can still take part in the course."
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/general/028_e7738f47c8_should-i-pay-for-cloud-services.md",
+      "chunk_preview": "It's not mandatory. You can take advantage of their free trial."
+    },
+    {
+      "filename": "faq-main/_questions/mlops-zoomcamp/general/002_7f10dde6f8_is-it-going-to-be-live-when.md",
+      "chunk_preview": "The course videos are pre-recorded, and you can start watching the course right now."
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/general/046_6314bc3029_how-do-i-get-my-certificate.md",
+      "chunk_preview": "For 2025 the link to the course profile is this:"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/general/002_bfafa427b3_course-what-are-the-prerequisites-for-this-course.md",
+      "chunk_preview": "To get the most out of this course, you should have:"
+    }
+  ]
+}

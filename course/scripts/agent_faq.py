@@ -1,8 +1,8 @@
 import asyncio
 from typing import List, Any
 from minsearch import Index
-from pydantic_ai import Agent
 import json
+from datetime import datetime
 
 # --- Étape 1 : Charger les chunks et préparer la fonction de recherche ---
 with open("faq_chunks_paragraphs.json", "r", encoding="utf-8") as f:
@@ -25,27 +25,55 @@ def text_search(query: str) -> List[Any]:
     """
     return faq_tindex.search(query, num_results=5)
 
-# --- Étape 2 : Créer l’agent avec Pydantic AI ---
-system_prompt = """
-Tu es un assistant utile pour un cours.
-Utilise l’outil de recherche avant de répondre.
-Si rien n’est trouvé, dis-le et propose une réponse générale.
-"""
+# --- Étape 2 : Fonction pour afficher les extraits et expansion ---
+def display_results(results: List[Any]):
+    print("\nI searched the FAQ and found these relevant excerpts:")
+    for i, r in enumerate(results, start=1):
+        print(f"{i}. {r['chunk'][:200]}... [source: {r['source']}]")  # affiche 200 caractères
+    print("\nIf you want more details, type 'expand <number>' (e.g., expand 1).")
+    print("Or type a new question, or 'exit' to quit.")
 
-agent = Agent(
-    name="faq_agent",
-    instructions=system_prompt,
-    tools=[text_search],
-    model="gpt-4o-mini"
-)
+def expand_result(results: List[Any], number: int):
+    if 1 <= number <= len(results):
+        r = results[number - 1]
+        print(f"\nExpanded excerpt {number}:")
+        print(r['chunk'])
+        print(f"[source: {r['source']}]")
+    else:
+        print("Invalid number. Choose a valid excerpt to expand.")
 
-# --- Étape 3 : Tester l’agent ---
-async def main():
-    question = "I just discovered the course, can I join now?"
-    result = await agent.run(user_prompt=question)
+# --- Étape 3 : Agent offline interactif ---
+async def offline_agent():
+    print(f"Chunks loaded: {len(chunks)}")
+    print("Offline FAQ Agent (no API). Type 'exit' to quit.\n")
 
-    print("\n🤖 Réponse de l’agent :")
-    print(result.output_text)
+    while True:
+        question = input("📝 Question: ").strip()
+        if question.lower() == "exit":
+            print("Bye!")
+            break
 
+        results = text_search(question)
+        display_results(results)
+
+        # Boucle pour expansion ou nouvelle question
+        while True:
+            cmd = input("\nCommand (or new question): ").strip()
+            if cmd.lower() == "exit":
+                print("Bye!")
+                return
+            elif cmd.lower().startswith("expand"):
+                try:
+                    num = int(cmd.split()[1])
+                    expand_result(results, num)
+                except (IndexError, ValueError):
+                    print("Use 'expand <number>', e.g., expand 2")
+            else:
+                # Nouvelle question
+                question = cmd
+                break
+
+# --- Étape 4 : Lancer l'agent ---
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(offline_agent())
+what

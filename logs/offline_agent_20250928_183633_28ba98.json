@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-09-28T18:36:33.101447",
+  "source": "user",
+  "question": "& C:/Users/marti/AppData/Local/Programs/Python/Python313/python.exe c:/Users/marti/Desktop/aihero/course/scripts/agent_faq.py",
+  "answer": "I searched the FAQ and found these relevant excerpts:\n- - `C:\\Users\\AppData\\...\\Python\\PythonXX\\`    - `C:\\Users\\AppData\\...\\Python\\PythonXX\\Scripts\\`... [source: faq-main/_questions/machine-learning-zoomcamp/module-5/021_3e4e288e93_pipenv-is-not-recognized-as-an-internal-or-externa.md]\n- Add `C:\\Users\\{User_Name}\\AppData\\Roaming\\Python\\Python39\\Scripts` to the `PATH`.... [source: faq-main/_questions/mlops-zoomcamp/module-2/028_f7cd7d85ab_mlflow-ui-on-windows-filenotfounderror-winerror-2.md]\n- 1. Use the command to get the location:    ```bash    pip list -v    ``` 2... [source: faq-main/_questions/data-engineering-zoomcamp/module-1/066_aa8c30b777_pgcli-pgcli-command-not-found.md]\n- ```bash    export PATH=\"/c/Users/[YourUsername]/Anaconda3/:/c/Users/[YourUsername]/Anaconda3/Scripts/$PATH\"    ```... [source: faq-main/_questions/data-engineering-zoomcamp/module-1/131_d02af042b1_pip-is-not-recognized-as-an-internal-or-external-c.md]\n- File \"/Users/name/Desktop/Programming/DataTalksClub/MLOps-Zoomcamp/2. Experiment tracking and model management/homework/scripts/register_model.py\", line 67, in run... [source: faq-main/_questions/mlops-zoomcamp/module-2/005_3a2a22f115_could-not-convert-string-to-float-valueerror.md]\n\nIf you'd like, tell me which excerpt you want expanded or ask for more details. If none of these look relevant, try rephrasing the question.",
+  "search_results": [
+    {
+      "filename": "faq-main/_questions/machine-learning-zoomcamp/module-5/021_3e4e288e93_pipenv-is-not-recognized-as-an-internal-or-externa.md",
+      "chunk_preview": "- `C:\\Users\\AppData\\...\\Python\\PythonXX\\`\n   - `C:\\Users\\AppData\\...\\Python\\PythonXX\\Scripts\\`"
+    },
+    {
+      "filename": "faq-main/_questions/mlops-zoomcamp/module-2/028_f7cd7d85ab_mlflow-ui-on-windows-filenotfounderror-winerror-2.md",
+      "chunk_preview": "Add `C:\\Users\\{User_Name}\\AppData\\Roaming\\Python\\Python39\\Scripts` to the `PATH`."
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-1/066_aa8c30b777_pgcli-pgcli-command-not-found.md",
+      "chunk_preview": "1. Use the command to get the location:\n   ```bash\n   pip list -v\n   ```\n2. Copy the path, which looks like:\n   ```\n   C:\\Users\\...\\AppData\\Roaming\\Python\\Python39\\site-packages\n   ```\n3. Replace `site-packages` with `Scripts`:\n   ```\n   C:\\Users\\...\\AppData\\Roaming\\Python\\Python39\\Scripts\n   ```"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-1/131_d02af042b1_pip-is-not-recognized-as-an-internal-or-external-c.md",
+      "chunk_preview": "```bash\n   export PATH=\"/c/Users/[YourUsername]/Anaconda3/:/c/Users/[YourUsername]/Anaconda3/Scripts/$PATH\"\n   ```"
+    },
+    {
+      "filename": "faq-main/_questions/mlops-zoomcamp/module-2/005_3a2a22f115_could-not-convert-string-to-float-valueerror.md",
+      "chunk_preview": "File \"/Users/name/Desktop/Programming/DataTalksClub/MLOps-Zoomcamp/2. Experiment tracking and model management/homework/scripts/register_model.py\", line 67, in run"
+    }
+  ]
+}

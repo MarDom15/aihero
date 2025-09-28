@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-09-28T18:33:50.984288",
+  "source": "user",
+  "question": "How do I install kafka in Python?",
+  "answer": "I searched the FAQ and found these relevant excerpts:\n- ```bash    pip install kafka-python==1.4.6    ```... [source: faq-main/_questions/data-engineering-zoomcamp/module-6/006_44cc6eaa10_error-while-running-python3-streampy-worker.md]\n- ### How to do it:... [source: faq-main/_questions/data-engineering-zoomcamp/module-2/012_a489fb34ac_should-i-include-my-env_encoded-file-in-my-gitigno.md]\n- 2. Install the specific version of `kafka-python`:... [source: faq-main/_questions/data-engineering-zoomcamp/module-6/006_44cc6eaa10_error-while-running-python3-streampy-worker.md]\n- ```bash pip install kafka-python-ng ```... [source: faq-main/_questions/data-engineering-zoomcamp/module-6/028_7c3cf3b8fc_how-to-fix-the-error-modulenotfounderror-no-module.md]\n- - Install `confluent-kafka`:   - Using pip:   ```bash   pip install confluent-kafka   ```   - Using conda:   ```bash   conda install conda-forge::python-confluent-kafka   ```... [source: faq-main/_questions/data-engineering-zoomcamp/module-6/021_2763850d3e_python-kafka-installing-dependencies-for-python3-0.md]\n\nIf you'd like, tell me which excerpt you want expanded or ask for more details. If none of these look relevant, try rephrasing the question.",
+  "search_results": [
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-6/006_44cc6eaa10_error-while-running-python3-streampy-worker.md",
+      "chunk_preview": "```bash\n   pip install kafka-python==1.4.6\n   ```"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-2/012_a489fb34ac_should-i-include-my-env_encoded-file-in-my-gitigno.md",
+      "chunk_preview": "### How to do it:"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-6/006_44cc6eaa10_error-while-running-python3-streampy-worker.md",
+      "chunk_preview": "2. Install the specific version of `kafka-python`:"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-6/028_7c3cf3b8fc_how-to-fix-the-error-modulenotfounderror-no-module.md",
+      "chunk_preview": "```bash\npip install kafka-python-ng\n```"
+    },
+    {
+      "filename": "faq-main/_questions/data-engineering-zoomcamp/module-6/021_2763850d3e_python-kafka-installing-dependencies-for-python3-0.md",
+      "chunk_preview": "- Install `confluent-kafka`:\n  - Using pip:\n  ```bash\n  pip install confluent-kafka\n  ```\n  - Using conda:\n  ```bash\n  conda install conda-forge::python-confluent-kafka\n  ```"
+    }
+  ]
+}
