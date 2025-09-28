@@ -60,3 +60,76 @@ This repository contains the code, experiments, and notes I built while followin
 ```text
 Question: How do I install Kafka in Python?  
 Answer: To install Kafka in Python, use `pip install kafka-python`. (source: faq1.md)
+
+## 🛠️ Tech Stack  
+
+- Python 3.13  
+- Transformers (Hugging Face 🤗)  
+- Falcon 7B Instruct (LLM)  
+- Pydantic for evaluation checks  
+- Pandas for test data  
+- TQDM for progress bars  
+
+---
+
+## 📂 Project Structure  
+
+```
+course/
+├── scripts/
+│   ├── agent_faq.py
+│   ├── 
+│   ├── 
+│   ├── 
+│   └── 
+├── logs/   # stores interaction logs
+└── README.md
+```
+
+---
+
+## 🚀 How to Run  
+
+1. Clone the repo:  
+
+```bash
+git clone https://github.com/yourusername/aihero.git
+cd aihero
+```
+
+2. Create virtual environment & install requirements:  
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # on Mac/Linux
+.venv\Scripts\activate      # on Windows
+
+pip install -r requirements.txt
+```
+
+3. Run the agent:  
+
+```bash
+python course/scripts/day5_hf_faq_agent.py
+```
+
+4. Ask questions interactively 🎤  
+
+---
+
+## 🌍 Follow My Journey  
+
+I’m sharing my daily progress on **Twitter/X** with the hashtag **#AIAgent**.  
+👉 Come follow along and build with me!  
+
+- 🧑‍💻 Follow Gregory (course creator)  
+- 🚀 Join me as I learn AI step by step  
+
+---
+
+## ✅ Next Steps  
+
+- Optimize performance (GPU/Colab)  
+- Add vector search (e.g., with FAISS or ChromaDB)  
+- Expand FAQ dataset with real course questions  
+- Improve evaluation with GPT-based metrics  
