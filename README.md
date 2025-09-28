@@ -72,7 +72,7 @@ Answer: To install Kafka in Python, use `pip install kafka-python`. (source: faq
 
 ---
 
-## 📂 Project Structure  
+ 📂 Project Structure  
 
 ```
 course/
@@ -88,7 +88,7 @@ course/
 
 ---
 
-## 🚀 How to Run  
+ 🚀 How to Run  
 
 1. Clone the repo:  
 
