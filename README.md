@@ -133,3 +133,10 @@ I’m sharing my daily progress on **Twitter/X** with the hashtag **#AIAgent**.
 - Add vector search (e.g., with FAISS or ChromaDB)  
 - Expand FAQ dataset with real course questions  
 - Improve evaluation with GPT-based metrics  
+
+
+## 📢 Connect with Me  
+
+- 🐦 [Twitter](https://twitter.com/martialdomche)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/mdomche)  
+- 📧 [Gmail](mailto:mdomche@gmail.com)  
