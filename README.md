@@ -1,4 +1,4 @@
-# 🦾 AI Engineering Journey — Days 1 to 5  
+# 🦾 AI Engineering Journey — Days 1 to 7
 
 Welcome to my personal journey of learning **AI Engineering** step by step.  
 This repository contains the code, experiments, and notes I built while following the course.  
