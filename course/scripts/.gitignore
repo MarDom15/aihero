@@ -5,7 +5,7 @@ __pycache__/
 *.pyd
 *.db
 
-# Environnements virtuels
+# Virtual environments
 .venv/
 env/
 venv/
@@ -16,3 +16,10 @@ venv/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Hugging Face cache & models
+.cache/
+huggingface/
+models/
+hub/
+
