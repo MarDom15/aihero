@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import asyncio
 from typing import List, Any
 from minsearch import Index
@@ -156,5 +156,3 @@ async def offline_agent():
 # --- Étape 4 : Lancer l'agent ---
 if __name__ == "__main__":
     asyncio.run(offline_agent())
->>>>>>> f3c52142e37a8a9db9630f7cb12bc087864267d7
-what
